@@ -1,3 +1,5 @@
+package com.observer;
+
 public enum WeatherType {
 
     SUNNY, RAINY, WINDY, COLD;
