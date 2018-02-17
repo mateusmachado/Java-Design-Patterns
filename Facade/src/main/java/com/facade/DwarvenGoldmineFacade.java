@@ -1,7 +1,7 @@
 package com.facade;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Collection;
 import java.util.List;
 
 public class DwarvenGoldmineFacade {
@@ -27,8 +27,8 @@ public class DwarvenGoldmineFacade {
         makeActions(workers, DwarvenMineWorker.Action.GO_HOME, DwarvenMineWorker.Action.GO_TO_SLEEP);
     }
 
-    private void makeActions(Collections<DwarvenMineWorker> workers
-    DwarvenMineWorker.Action... actions){
+    private static void makeActions(Collection<DwarvenMineWorker> workers
+    DwarvenMineWorker.Action... actions) {
         for (DwarvenMineWorker worker : workers){
             worker.action(actions);
         }
