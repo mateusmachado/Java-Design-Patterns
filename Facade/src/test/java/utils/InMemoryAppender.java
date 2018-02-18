@@ -23,7 +23,7 @@ public class InMemoryAppender extends AppenderBase<ILoggingEvent> {
     }
 
     public int getLogSize(){
-        return getLogSize();
+        return log.size();
     }
 
     public boolean logContains(String message){
