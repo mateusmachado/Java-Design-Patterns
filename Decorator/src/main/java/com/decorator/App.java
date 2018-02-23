@@ -9,7 +9,7 @@ public class App {
 
 	public static void main(String[] args) {
 		LOGGER.info("A simple looking troll approaches");
-		Troll troll = new SimpleTroll;
+		Troll troll = new SimpleTroll();
 		troll.attack();
 		troll.fleeBattle();
 		LOGGER.info("Clubbed troll power {}.\n", troll.getAttackPower());		
