@@ -3,18 +3,15 @@ package com.abstractfactory;
 public class ElfKingdomFactory implements KingdomFactory{
 
 	public Castle createCastle() {
-		// TODO Auto-generated method stub
-		return null;
+		return new ElfCastle();
 	}
 
 	public King createKing() {
-		// TODO Auto-generated method stub
-		return null;
+		return new ElfKing();
 	}
 
 	public Army createArmy() {
-		// TODO Auto-generated method stub
-		return null;
+		return new ElfArmy();
 	}
 
 }

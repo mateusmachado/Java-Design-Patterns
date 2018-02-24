@@ -63,5 +63,11 @@ public class App {
 		LOGGER.info(app.getArmy().getDescription());
 		LOGGER.info(app.getCastle().getDescription());
 		LOGGER.info(app.getKing().getDescription());
+		
+		LOGGER.info("Elf Kingdom");
+	    app.createKingdom(FactoryMaker.makeFactory(KingdomType.ELF));
+	    LOGGER.info(app.getArmy().getDescription());
+	    LOGGER.info(app.getCastle().getDescription());
+	    LOGGER.info(app.getKing().getDescription());
 	}
 }
