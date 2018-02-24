@@ -1,12 +1,12 @@
 package com.abstractfactory;
 
-public static class FactoryMaker {
+public class FactoryMaker {
 
 	public enum KingdomType {
 		ELF, ORC
 	}
 
-	public static KingdomFactory makeFactory(KingdomType type) {
+	public KingdomFactory makeFactory(KingdomType type) {
 		switch (type) {
 		case ELF:
 			return new ElfKingdomFactory();
