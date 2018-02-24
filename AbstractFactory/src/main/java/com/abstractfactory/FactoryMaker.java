@@ -6,7 +6,7 @@ public class FactoryMaker {
 		ELF, ORC
 	}
 
-	public KingdomFactory makeFactory(KingdomType type) {
+	public static KingdomFactory makeFactory(KingdomType type) {
 		switch (type) {
 		case ELF:
 			return new ElfKingdomFactory();
